@@ -1,0 +1,17 @@
+//CUSTOM DOM manipulation js library just for me probably opensourced in the future;
+//Created by Ytonnah
+
+//1. define object_type,2. define the parent object,3.create a 2d array of styles
+function create_object(object="",parent,styles){
+    var object = document.createElement(object);
+    //array object property 2d array
+    //ex [["height","2px"],["color",red]]
+    var i,j;
+    //console.log(styles);
+    for(i=0;i<styles.length;i++){//rows
+        object.style[styles[i][0]]= styles[i][1];//col
+    }
+    //console.log("successfully created an object")
+    return parent.appendChild(object);
+}
+

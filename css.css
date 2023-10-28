@@ -1,0 +1,21 @@
+body{
+    background-color: #FCE09B;
+}
+#notes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+textarea{
+    resize: none;
+    outline: none;
+}
+*{
+    font-family: sans-serif;
+}
+#add_note{
+    width: 200px;
+    height: 200px;
+}
